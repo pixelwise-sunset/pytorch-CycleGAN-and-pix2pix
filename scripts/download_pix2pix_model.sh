@@ -7,4 +7,4 @@ mkdir -p ./checkpoints/${FILE}_pretrained
 MODEL_FILE=./checkpoints/${FILE}_pretrained/latest_net_G.pth
 URL=http://efrosgans.eecs.berkeley.edu/pix2pix/models-pytorch/$FILE.pth
 
-wget -N $URL -O $MODEL_FILE
+curl -N $URL -O $MODEL_FILE
